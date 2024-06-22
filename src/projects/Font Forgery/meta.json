@@ -1,0 +1,12 @@
+{  
+	"name":"FontForgery",
+	"id":"FontForgery",
+	"category": "cat_pessoal",
+	"desc":
+	{
+		"br": ["Aplicativo que permite capturar sua escrita pessoal e criar uma fonte a partir de uma imagem."],
+		"en": ["Application that allows you to capture your personal writing and create a font from an image."]
+	},
+	"area":"Frontend & Backend",
+	"language": "JavaScript, HTML, CSS"
+}

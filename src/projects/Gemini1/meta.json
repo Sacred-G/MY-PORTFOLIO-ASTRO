@@ -1,0 +1,12 @@
+{  
+	"name":"Gemini",
+	"id":"Gemini1",
+	"category": "cat_pessoal",
+	"desc":
+	{
+		"br": ["Utilizando la tecnología de vanguardia de Google Gemini, GeminiVision ofrece a los usuarios una plataforma intuitiva para analizar, interpretar y obtener información de cualquier imagen. Desde el reconocimiento de objetos y patrones hasta la comprensión de contextos visuales complejos, GeminiVision transforma tus imágenes en una riqueza de información."],
+		"en": ["Leveraging Google Gemini's cutting-edge technology, GeminiVision offers users an intuitive platform to analyze, interpret, and gain insights from any image. From recognizing objects and patterns to understanding complex visual contexts, GeminiVision transforms your images into a wealth of information. "]
+	},
+	"area":"Googles Gemini API, Python, Streamlit, LLM",
+	"url":"http://aicollection.streamlit.app/Gemini"
+}

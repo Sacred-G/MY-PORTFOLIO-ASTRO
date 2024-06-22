@@ -1,0 +1,12 @@
+{  
+	"name":"Resume Site",
+	"id":"ResumeSite",
+	"category": "cat_pessoal_blogs",
+	"desc":
+	{
+		"br": ["Sitio web personal que muestra un ejemplo de codificación en vivo de HTML, CSS, Javascript. Permitiendo al usuario editar el CSS en vivo en la página."],
+		"en": ["Personal website showcasing live coding example of HTML, CSS, Javascript. Allowing user to edit the css live on the page"]
+	},
+	"area":"Javascript,Markdown, HTML5",
+	"url":"http://www.stevenbouldin.com"
+}

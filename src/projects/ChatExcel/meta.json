@@ -1,0 +1,15 @@
+{
+	"name":"ChatExcel",
+	"id":"ChatExcel",
+	"category": "cat_pessoal",
+	"desc":
+	{
+		"br": ["Esta plataforma intuitiva permite a los usuarios cargar archivos de Excel y participar en conversaciones dinámicas con una IA, extrayendo información, resúmenes y análisis con consultas simples.",
+		"Ya sea que esté buscando comprender conjuntos de datos complejos, identificar tendencias o tomar decisiones basadas en datos, ExcelAI Chat cierra la brecha entre los datos sin procesar y la inteligencia procesable, haciendo que el análisis de datos sea accesible y conversacional."],
+			
+		"en": ["This intuitive platform allows users to upload Excel files and engage in dynamic conversations with an AI, extracting insights, summaries, and analyses with simple queries.",
+		"Whether you're looking to understand complex datasets, identify trends, or make data-driven decisions, ExcelAI Chat bridges the gap between raw data and actionable intelligence, making data analysis accessible and conversational."]
+	},
+	"area":"AI,PYTHON,MARKDOWN",
+	"url":"https://aicollection.streamlit.app/"
+}

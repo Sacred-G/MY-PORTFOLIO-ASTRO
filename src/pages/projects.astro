@@ -1,0 +1,46 @@
+---
+import getProjectsData from '../../getProjectsData';
+import ProjectItem from '../components/ProjectItem.astro';
+
+const projectsByCategory = await getProjectsData();
+const langs = (await import('../../public/assets/langs.json')).default;
+const dict = langs;
+
+// Define the Project type here for clarity
+type Project = {
+  path: string;
+  name: string;
+  description: string;
+  category: string;
+  color: number;
+  thumbPath: string;
+  hasThumb: boolean;
+  images: string[];
+};
+
+type ProjectsByCategory = {
+  [category: string]: Project[];
+};
+
+---
+<div class="project-wrapper">
+  <h2 class="page-title title--padded-mobile">Projects</h2>
+
+  {
+    Object.entries(projectsByCategory as ProjectsByCategory).map(
+      ([catId, projects]) => {
+        const categoryName = dict[catId]?.en || "Unknown Category";
+        return (
+          <div class="project__list" data-key={catId}>
+            <h3 class="structure--animatable animation--1">{categoryName}</h3>
+            <div class="project__grid clear--after">
+              {projects.map((project: Project) => (
+                <ProjectItem project={project} key={project.path} />
+              ))}
+            </div>
+          </div>
+        );
+      }
+    )
+  }
+</div>

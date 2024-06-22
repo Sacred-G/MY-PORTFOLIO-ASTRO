@@ -1,0 +1,11 @@
+{
+  "name": "ArtistryAI",
+  "id": "ArtistryAI",
+  "category": "cat_pessoal",
+  "desc": {
+    "br": ["Su estudio artístico de texto a imagen."],
+    "en": ["Your Text-to-Image Artistry Studio."]
+  },
+  "area": "AI,PYTHON,PROMPT-ENGINEERING",
+  "url": "https://aicollection.streamlit.app/IMAGE_CREATIONZ"
+}

@@ -1,0 +1,12 @@
+{  
+	"name":"AICollection",
+	"id":"AICollection",
+	"category": "cat_pessoal",
+	"desc":
+	{
+		"br": ["Aplicación que te permite conversar con tus archivos PDF, Excel o imágenes."],
+		"en": ["Collection of apps I built using AI gpt technology"]
+	},
+	"area":"AI & Machine learning",
+	"url":"https://aicollection.streamlit.app"
+}
