@@ -4,7 +4,7 @@ import ProjectItem from '../components/ProjectItem.astro';
 
 const projectsByCategory = await getProjectsData();
 const langs = (await import('../../public/assets/langs.json')).default;
-const dict = langs;
+const dict = langs;  //changes
 
 // Define the Project type here for clarity
 type Project = {

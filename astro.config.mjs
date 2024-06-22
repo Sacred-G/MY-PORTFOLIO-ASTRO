@@ -3,6 +3,6 @@ import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
   // ...
-  output: 'server',
+  output: 'server',  // added cli vercel
   adapter: vercel(),
 });
