@@ -1,0 +1,12 @@
+{  
+	"name":"PinMap",
+	"id":"PinMap",
+	"category": "cat_pessoal",
+	"desc":
+	{
+		"br": ["Se precisar de mais alguma coisa ou tiver alguma dúvida sobre o desenvolvimento do PinMap, estou à disposição!"],
+		"en": ["PinMap for road dept to pin on a map so the public can see what's going on."]
+	},
+	"area":"NextJS, React, NodeJS, Postgres, Typescript,",
+	"url":"http://mtifieldtech.streamlit.app"
+}
