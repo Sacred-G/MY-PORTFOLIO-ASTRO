@@ -1,27 +1,10 @@
 ---
-type project = {
-  path: string;
-  name: string;
-  description: string;
-  category: string;
-  color: number;
-  thumbPath: string;
-  hasThumb: boolean;
-  images: string[];
-  desc: {
-    en: string[];
-  };
-  area?: string;
-  url: string;
-  index?: number;
-};
-
 const { project } = Astro.props;
 ---
 <div class={`
     project__item
     project--color-${project.color}
-    animation--${project.index || 0}
+    animation--${project.index}
     ${!project.hasThumb ? '-no-thumb' : ''}
   `}
 >
@@ -39,26 +22,26 @@ const { project } = Astro.props;
   </a>
   <div class="project__complete">
     <div class="project__complete-wrapper clear--after">
-    {project.images?.length > 0 && (
-      <div class="project__slides">
-        <div class="project__slides-wrapper">
-          {project.images.map((imgSrc) => (
-            <div class="project__slide">
-              <img data-lazyload={`${imgSrc}`} />
-            </div>
-          ))}
+      {(project.images && project.images.length > 0) && (
+        <div class="project__slides">
+          <div class="project__slides-wrapper">
+            {project.images.map((imgPath) => (
+              <div class="project__slide">
+                <img data-lazyload={`${imgPath}`} />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    )}
+      )}
       <div class="project__infos">
         <h4 class="project__title">{project.name}</h4>
         <div class="project__desc">
-          {project.desc?.en?.map(($paragraph) => (
-            <p>{$paragraph}</p>
+          {project.desc?.en?.map(($paragraph, index) => (
+            <p key={index}>{$paragraph}</p>
           ))}
-          {project.area && (
+          {project.area && project.area.length > 0 && (
             <p>
-              <strong>Area:</strong>: {project.area}
+              <strong>Area:</strong> {project.area}
             </p>
           )}
         </div>

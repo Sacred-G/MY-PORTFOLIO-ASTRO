@@ -1,0 +1,12 @@
+{  
+	"name":"WorkCertifications",
+	"id":"WorkCertifications",
+	"category": "cat_pessoal_blogs",
+	"desc":
+	{
+		"br": [],
+		"en": ["list of certifications"]
+	},
+	"area":"",
+	"url":""
+}
