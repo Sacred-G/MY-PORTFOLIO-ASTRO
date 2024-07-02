@@ -1,0 +1,11 @@
+{
+  "name": "InteriorDesign AI",
+  "id": "InteriorDesign",
+  "category": "cat_pessoal_blogs",
+  "desc": {
+    "br": ["InteriorDesign AI cria um ambiente a partir de uma foto, oferecendo diferentes designs para o quarto. Ideal para quem busca inspiração e novas ideias de decoração."],
+    "en": ["InteriorDesign AI creates a room based on a picture, giving you different designs for the room. Perfect for those looking for inspiration and new decorating ideas."]
+  },
+  "area": "AI & Interior Design",
+  "url": "https://design-ai-eosin.vercel.app/"
+}

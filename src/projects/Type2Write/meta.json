@@ -1,0 +1,14 @@
+{  
+	"name":"Type2Write",
+	"id":"Type2Write",
+	"category": "cat_pessoal_blogs",
+	"desc":
+	{
+		"br": ["Type2Write permite que você digite qualquer documento ou texto na caligrafia de outra pessoa. É uma maneira simples e divertida de fazer seu texto parecer que foi escrito por outra pessoa. Use-o para tarefas de casa.",
+		"Tire uma foto de qualquer documento para transcrevê-lo ou traduzi-lo para um estilo diferente de caligrafia. A escolha é sua."],
+		"en": ["TType2Write allows you type any document or text in someone elses handwriting. It's a simple and fun way to make your text look like it was written by someone else. Use it for homework.", 
+		"take a picture of any document to transcribe it or translate it into a different style of handwriting. It's up to you"]
+	},
+	"area":"Reactjs, Nodejs, AI",
+	"url":"google.playstore.com"
+}

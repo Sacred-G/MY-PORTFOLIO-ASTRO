@@ -22,10 +22,15 @@ const { project } = Astro.props;
   </a>
   <div class="project__complete">
     <div class="project__complete-wrapper clear--after">
+      {project.mainImagePath && (
+        <div class="project__main-image">
+          <img src={project.mainImagePath} alt={`Main image of ${project.name}`} />
+        </div>
+      )}
       {(project.images && project.images.length > 0) && (
         <div class="project__slides">
           <div class="project__slides-wrapper">
-            {project.images.map((imgPath) => (
+            {project.images.slice(2).map((imgPath) => (
               <div class="project__slide">
                 <img data-lazyload={`${imgPath}`} />
               </div>
@@ -37,7 +42,7 @@ const { project } = Astro.props;
         <h4 class="project__title">{project.name}</h4>
         <div class="project__desc">
           {project.desc?.en?.map(($paragraph, index) => (
-            <p key={index}>{$paragraph}</p>
+              <p class={`paragraph-${index}`}>{$paragraph}</p>
           ))}
           {project.area && project.area.length > 0 && (
             <p>

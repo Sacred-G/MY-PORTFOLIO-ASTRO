@@ -1,7 +1,7 @@
 {
 	"name":"ChatExcel",
 	"id":"ChatExcel",
-	"category": "cat_pessoal",
+	"category": "client_projects",
 	"desc":
 	{
 		"br": ["Esta plataforma intuitiva permite a los usuarios cargar archivos de Excel y participar en conversaciones dinámicas con una IA, extrayendo información, resúmenes y análisis con consultas simples.",

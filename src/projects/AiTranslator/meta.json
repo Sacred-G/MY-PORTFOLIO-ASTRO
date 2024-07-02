@@ -1,0 +1,15 @@
+{  
+	"name":"AiTranslator",
+	"id":"AiTranslator",
+	"category": "cat_pessoal_blogs",
+	"desc":
+	{
+		
+			"br": ["Desenvolvido com uma poderosa IA, o AI Translator traduz qualquer linguagem de programação para outra de maneira rápida e precisa. Ideal para desenvolvedores que precisam migrar código ou aprender novas linguagens."],
+			"en": ["Powered by a powerful AI, AI Translator translates any programming language into another quickly and accurately. Perfect for developers needing to migrate code or learn new languages."]
+		  
+		  
+	},
+	"area":"Frontend & Backend",
+	"url":"https://ai-code-translator-ebon-nu.vercel.app/"
+}

@@ -1,7 +1,7 @@
 {
   "name": "ArtistryAI",
   "id": "ArtistryAI",
-  "category": "cat_pessoal",
+  "category": "cat_pessoal_blogs",
   "desc": {
     "br": ["Su estudio artístico de texto a imagen."],
     "en": ["Your Text-to-Image Artistry Studio."]

@@ -1,14 +1,11 @@
 ---
 import Debug from 'astro/debug';
-import { join } from 'node:path';
+import { join, extname } from 'node:path';
 import { readdir, stat, readFile } from 'node:fs/promises';
-
 import ProjectItem from '../components/ProjectItem.astro';
 
 const exists = async (path) => !!(await stat(path).catch(() => false));
-
 const getRandomColor = () => Math.floor(Math.random() * 5) + 1;
-
 const projectsDir = join(process.cwd(), 'src', 'projects');
 const projectIds = await readdir(projectsDir);
 
@@ -19,16 +16,24 @@ const projects = (
   await Promise.all(
     filteredProjectIds.map(async (projectId) => {
       const projectPath = join(projectsDir, projectId);
-
       try {
         const meta = JSON.parse(await readFile(join(projectPath, 'meta.json'), 'utf-8'));
-        const thumbLocalPath = join(projectPath, `${projectId}.jpg`);
-        const thumbPublicPath = `src/projects/${projectId}/${projectId}.jpg`;
-        const imageLocalPath = join(projectPath, `image.jpg`);  // Assuming main image file is named 'image.jpg'
-        const imagePath = `src/projects/${projectId}/image.jpg`;
+        
+        // Find thumbnail image (any extension)
+        const thumbFiles = await readdir(projectPath);
+        const thumbFile = thumbFiles.find(file => file.startsWith(projectId) && file !== 'meta.json');
+        const thumbLocalPath = thumbFile ? join(projectPath, thumbFile) : null;
+        const thumbPublicPath = thumbFile ? `src/projects/${projectId}/${thumbFile}` : null;
+
+        // Find main image (any extension)
+        const imageFile = thumbFiles.find(file => file.startsWith('image.'));
+        const imageLocalPath = imageFile ? join(projectPath, imageFile) : null;
+        const imagePath = imageFile ? `src/projects/${projectId}/${imageFile}` : null;
+
         const imgsPath = join(projectPath, 'imgs');
-        const hasThumb = await exists(thumbLocalPath);
-        const hasImage = await exists(imageLocalPath);
+        const hasThumb = thumbLocalPath ? await exists(thumbLocalPath) : false;
+        const hasImage = imageLocalPath ? await exists(imageLocalPath) : false;
+
         const images = await readdir(imgsPath)
           .then((paths) => {
             return paths.map((path) => `src/projects/${projectId}/imgs/${path}`);
@@ -38,8 +43,8 @@ const projects = (
         return {
           ...meta,
           color: getRandomColor(),
-          thumbPath: thumbPublicPath,
-          imagePath: hasImage ? imagePath : null, // Include imagePath only if the image exists
+          thumbPath: hasThumb ? thumbPublicPath : null,
+          imagePath: hasImage ? imagePath : null,
           hasThumb,
           path: projectPath,
           images,
@@ -69,10 +74,10 @@ const dict = (await import('../../public/assets/langs.json')).default;
   <h2 class="page-title title--padded-mobile">Projects</h2>
 
   {Object.entries(projectsByCategory).map(([catId, projects]) => {
-    const categoryName = dict[catId]?.en;
+    const categoryName = dict[catId]?.en || "Unknown Category";
     return (
       <div class="project__list" key={catId}>
-        <h3 class="structure--animatable animation1--">{categoryName}</h3>
+        <h3 class="structure--animatable animation--">{categoryName}</h3>
         <div class="project__grid clear--after">
           {projects.map((project) => (
             <ProjectItem project={project} key={project.path} />

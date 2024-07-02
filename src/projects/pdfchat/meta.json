@@ -1,0 +1,12 @@
+{  
+	"name":"PDFChat",
+	"id":"PDFChat",
+	"category": "cat_pessoal_blogs",
+	"desc":
+	{
+		"br": ["Aplicación que te permite conversar con tus archivos PDF, Excel o imágenes."],
+		"en": ["Collection of apps I built using AI gpt technology"]
+	},
+	"area":"AI & Machine learning",
+	"url":"https://mtifieldtech.streamlit.app"
+}

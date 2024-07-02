@@ -1,7 +1,7 @@
 {  
 	"name":"AICollection",
 	"id":"AICollection",
-	"category": "cat_pessoal",
+	"category": "cat_pessoal_blogs",
 	"desc":
 	{
 		"br": ["Aplicación que te permite conversar con tus archivos PDF, Excel o imágenes."],

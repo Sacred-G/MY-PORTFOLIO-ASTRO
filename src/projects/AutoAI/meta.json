@@ -1,0 +1,11 @@
+{
+	"name": "AutoAI",
+	"id": "AutoAI",
+	"category": "cat_pessoal_blogs",
+	"desc": {
+		"br": ["Auto AI permite que você escolha uma persona e converse com ela usando diferentes modelos de linguagem natural (LLMs). Ideal para interações personalizadas e adaptativas."],
+		"en": ["Auto AI allows you to choose a persona and chat with it using different natural language models (LLMs). Perfect for personalized and adaptive interactions."]
+	},
+	"area": "AI & Chatbots",
+	"url": "https://bailey-ai.vercel.app/"
+}

@@ -1,10 +1,10 @@
 {  
 	"name":"WorkCertifications",
 	"id":"WorkCertifications",
-	"category": "cat_pessoal_blogs",
+	"category": "cat_pessoal_opensource",
 	"desc":
 	{
-		"br": [],
+		"br": ["list of certifications"],
 		"en": ["list of certifications"]
 	},
 	"area":"",

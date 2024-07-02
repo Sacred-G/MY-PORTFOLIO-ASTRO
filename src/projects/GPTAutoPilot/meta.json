@@ -1,0 +1,12 @@
+{  
+	"name":"GPTAutoPilot",
+	"id":"GPTAutoPilot",
+	"category": "cat_pessoal_blogs",
+	"desc":
+	{
+		"br": ["Se precisar de mais alguma coisa ou tiver alguma dúvida sobre o desenvolvimento do GPTAutoPilot, estou à disposição!"],
+		"en": ["GPTAutoPilot is an app that can build other apps and websites from a prompt."]
+	},
+	"area":"Python, OpenAI, ChatGPT",
+	"url":"http://github.com/sacred-g/GPTAutoPilot"
+}

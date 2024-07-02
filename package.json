@@ -10,10 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^7.7.1",
-    "astro": "^4.10.3"
-  },
-  "devDependencies": {
-    "@types/node": "^20.14.6"
+    "@types/node": "^20.14.9",
+    "astro": "^4.11.3",
+    "snowpack": "^3.8.8"
   }
 }

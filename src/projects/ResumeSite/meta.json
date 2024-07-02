@@ -1,7 +1,7 @@
 {  
 	"name":"Resume Site",
 	"id":"ResumeSite",
-	"category": "cat_pessoal_blogs",
+	"category": "cat_pessoal_opensource",
 	"desc":
 	{
 		"br": ["Sitio web personal que muestra un ejemplo de codificación en vivo de HTML, CSS, Javascript. Permitiendo al usuario editar el CSS en vivo en la página."],
